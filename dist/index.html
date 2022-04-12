@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>To-do List</header>
+    <main>
+        <div id="sidebar">
+            <div class="category-style" id="all">
+                All
+                <div class="delete">X</div>
+            </div>
+            <div class="category-style" id="important">
+                Important
+                <div class="delete">X</div>
+            </div>
+            <button id="button-side">+ Add</button>
+        </div>
+
+        <div id="container">
+            <div id="title">All</div>
+            <div class="task-container" id="task-container">
+                <div class="task">
+                    <div class="task-1">
+                        <div class="check"></div>
+                        <div class="important-button">!</div>
+                        <div class="task-name">Tarefa 1</div>
+                        <input type="date" readonly>
+                    </div>
+                    <div class="delete">X</div>
+                </div>
+                <div class="task">
+                    <div class="task-1">
+                        <div class="check"></div>
+                        <div class="important-button">!</div>
+                        <div class="task-name">Tarefa 2</div>
+                        <input type="date" readonly>
+                    </div>
+                    <div class="delete">X</div>
+                </div>
+            </div>
+            <button id="task-container-button">Add Task</button>
+        </div>
+    </main>
+
+    <div id="background-category">
+        <div id="create-category">
+            <input type="text" placeholder="Name" id="input-category">
+            <div class="buttons">
+                <button id="add-category">Add</button>
+                <button id="cancel-category">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="background-task">
+        <div id="create-task">
+            <input type="text" placeholder="Name" id="input-task">
+            <input type="date" id="date-task">
+            <div class="buttons">
+                <button id="add-task">Add</button>
+                <button id="cancel-task">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
