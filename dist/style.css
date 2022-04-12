@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
 body {
     margin: 0px;
 }
@@ -7,7 +11,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #3A3845;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 main {
@@ -19,25 +27,36 @@ main {
 
 #sidebar {
     padding: 10px 5px 5px 5px;
-    background-color: gainsboro;
+    background-color: #C69B7B;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     gap: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .category-style {
-    background-color: darkseagreen;
+    background-color: #826F66;
     padding: 8px;
     display: grid;
     grid-template-columns: 6fr 1fr;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    transition: 200ms;
+}
+
+.category-style:hover {
+    background-color: #473d38;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 #container {
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: silver;
+    background-color: #F7CCAC;
     padding: 10px 5px 5px 5px;
 }
 
@@ -47,17 +66,19 @@ main {
 
 .task-container {
     padding: 10px 5px 5px 5px;
-    background-color: silver;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .task {
-    background-color: darkseagreen;
+    background-color: #826F66;
     display: grid;
     grid-template-columns: 6fr 1fr;
     padding: 8px;
+    color: white;
+    border-radius: 15px;
+    transition: 200ms;
 }
 
 .task-1 {
@@ -69,14 +90,23 @@ main {
 .check, .important-button {
     height: 18px;
     width: 18px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 15px;
     text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 200ms;
 }
 
 .delete {
     align-self: center;
     justify-self: center;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: white;
 }
 
 #task-container-button {
@@ -124,4 +154,21 @@ main {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
+}
+
+button {
+    background-color: #3A3845;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border: 0px;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: #18171c;
+    box-shadow: 1px 1px 1px 1px black;
+
 }

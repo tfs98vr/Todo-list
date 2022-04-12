@@ -44,7 +44,7 @@ const divTask = (name, date) => {
         if(count % 2 != 0) {
             important.style.backgroundColor = 'orange'
         } else {
-            important.style.backgroundColor = 'darkseagreen'
+            important.style.backgroundColor = '#826F66'
         }
     })
 

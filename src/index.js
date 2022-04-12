@@ -60,6 +60,7 @@ sideButton.addEventListener('click', function() {
 })
 
 categoryButton.addEventListener('click', function() {
+    
     let category = makeCategory(inputCategory.value, sidebar, title)
 
     replaceDiv(category.div, sideButton, sidebar)
@@ -117,7 +118,6 @@ addTask.addEventListener('click', function() {
             importantArr.push(task.div)
         } else {
             importantArr.splice(importantArr.indexOf(task.div), importantArr.indexOf(task.div) + 1)
-            taskContainer.removeChild(task.div)
         }       
     })
 })
